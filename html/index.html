@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style1.css">
+    <link rel="stylesheet" href="/js/index.js">
+    <link rel="icon" href="/img/ImgHist/icon.jpg">
+    <title>Login</title>
+</head>
+
+<body class="gradient-bg">
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="username">Usuário</label>
+                <input type="text" id="username" name="username" placeholder="Digite seu usuário...">
+            </div>
+            <div class="input-group">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha...">
+            </div>
+            <button type="button" class="login-btn" onclick="redirectToDashboard()">Entrar</button>
+        </form>
+        <p class="register-link">Ainda não tem uma conta? <a href="/html/cadstro.html">Cadastre-se</a></p>
+        <br>
+        <br>
+        <footer>
+            <p>&copy; 2024 - Dashboard CS 1.6 - Todos os direitos reservados.</p>
+        </footer>
+    </div>
+
+    <script>
+        function redirectToDashboard() {
+            // Verifique as credenciais aqui antes de redirecionar, se necessário
+            window.location.href = "/html/dashbord.html";
+        }
+    </script>
+</body>
